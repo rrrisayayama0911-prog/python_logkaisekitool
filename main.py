@@ -12,5 +12,8 @@ with open("C:/Users/Risaj/python_logkaisekitool/python_logkaisekitool/log.txt","
     lines=f.read().splitlines()
     print(lines)
 
-print("変更テスト")
+#raw文字(ファイルパスの前にr:と付け加える)でバックスラッシュをエスケープシーケンスを無視させて単純な文字列として認識させる
 
+with open(r"C:\Users\Risaj\python_logkaisekitool\python_logkaisekitool/log.txt","r",encoding="utf-8")as f:
+    lines=f.read().splitlines()
+    print(lines)
