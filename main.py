@@ -2,7 +2,7 @@
 
 #4/26:ERROR抽出（表示）、count結果を記載した書き込みファイルを作成を関数化
 
-#関数で処理をまとめる
+#関数で処理をまとめる、3つの受け取る箱(変数)を用意
 def analyze_log(in_f,out_f,keywords): #keywordはcui時点では使用しない
     
     count_ERROR=0
@@ -42,7 +42,7 @@ def analyze_log(in_f,out_f,keywords): #keywordはcui時点では使用しない
             out_f.write("------------")
 
 
-#1回だけ呼ぶ
+#1回だけ呼ぶ、3つのデータを入れる
 keywords =["ERROR","INFO","START"]
 analyze_log("log.txt","output.txt",keywords)
     
