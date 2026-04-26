@@ -1,6 +1,6 @@
 #pythonログ解析ツール
 
-#4/26:ERROR抽出（表示）、count結果を記載した書き込みファイルを作成を関数化
+#gui切り替え
 
 #関数で処理をまとめる、3つの受け取る箱(変数)を用意
 def analyze_log(in_f,out_f,keywords): #keywordはcui時点では使用しない
